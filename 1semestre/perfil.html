@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Editar Perfil</title>
+  <link rel="icon" href="/static/imgs/site.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="perfil.css">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <script src="/static/js/bootstrap.bundle.min.js"></script>
+</head>
+<!-- Seção do banner -->
+<section class="fundo-verde">
+<section class="banner">
+  <div class="header">
+    <div class="cover" id="cover-image">
+      <div class="perfil-usuario">
+        <img id="perfil-usuario-img" src="http://www.coopernortetelecom.com.br/assets/images/author-1.png" alt="">
+        <button type="button" class="boton-avatar" id="change-avatar">
+          <i class="far fa-image"></i>
+        </button>
+        <input id="profile-picture-upload" type="file" style="display: none;" accept="image/*">
+        <input id="cover-photo-upload" type="file" style="display: none;" accept="image/*">
+      </div>
+
+      <!-- Ícones das redes sociais -->
+      <div class="redes-sociais">
+        <a href="#" class="rede-social-link"><img src="Contato-img/facebook.png" alt="Facebook"></a>
+        <a href="#" class="rede-social-link"><img src="Contato-img/instagram.png" alt="Instagram"></a>
+        <a href="#" class="rede-social-link"><img src="Contato-img/whatsapp.png" alt="WhatsApp"></a>
+        <a href="#" class="rede-social-link"><img src="Contato-img/linkedin.png" alt="LinkedIn"></a>
+        <a href="mailto:seuemail@gmail.com" class="rede-social-link"><img src="Contato-img/email.png" alt="Email"></a>
+        <a href="tel:seunumero" class="rede-social-link"><img src="Contato-img/telefone.png" alt="Telefone"></a>
+      </div>
+      <br>]
+      <br>
+      <br>
+      
+    </div>
+  </div>
+</section>
+
+<a href="editar-perfil.html"class="rede-social-link"  class="btn" id="botao-end">Editar perfil</a>
+<!-- Modal para escolher entre foto de perfil e foto de capa -->
+<div id="imageModal" class="modal">
+  <div class="modal-content animate">
+    <span class="close" id="closeModal">&times;</span>
+    <h2>Escolha uma opção</h2>
+    <button id="profilePictureButton">Mudar foto de perfil</button>
+    <button id="coverPhotoButton">Mudar foto de capa</button>
+  </div>
+</div>
+
+
+
+
+  <!-- Botão para editar fotos de perfil e de capa -->
+
+<center>
+  <!-- Nome da empresa -->
+  <div class="nomeEmpresa">
+    <h1 class="nomeEmpresa-titulo">BALDAN</h1>
+    <h2 class="sobre-titulo">Sobre a Empresa</h2>
+  </div>
+  <div class="container-end  transicao-sobre">
+    <h3 class="sobre">
+      Procurando por máquinas e implementos agrícolas de alta qualidade? A Baldan é a resposta. Com uma rica tradição e compromisso com a excelência, somos líderes no setor agrícola. Oferecemos uma ampla variedade de equipamentos que atendem às necessidades dos agricultores e produtores.
+
+      Na Baldan, acreditamos que a qualidade é a base do nosso sucesso. Nossos produtos são projetados e fabricados com os mais altos padrões, garantindo durabilidade e desempenho excepcionais. Seja você um grande fazendeiro ou um pequeno proprietário, nossas soluções sob medida são ideais para todas as situações.
+
+      Além de nossa experiência em equipamentos agrícolas, a Baldan está comprometida com a inovação. Estamos constantemente pesquisando e desenvolvendo novas tecnologias e práticas agrícolas sustentáveis para melhorar a produtividade e o sucesso de nossos clientes.
+
+      Venha conhecer a Baldan. Junte-se a nós nesta jornada e experimente o que é ser parte de uma história de sucesso.
+    </h3>
+  </div>
+  <blockquote class="transicao-lema">
+    "Se foram eles os alicerces, seremos nós outros parede sólida de segurança; se eles plantaram, não nos compete colher, mas continuar plantando, pois que a colheita nós oferecemos ao povo brasileiro."
+    <footer>- Oscar Baldan</footer>
+  </blockquote>
+</center>
+</section>
+
+<script>document.addEventListener("DOMContentLoaded", function() {
+  var secaoEntrada = document.querySelector(".transicao-sobre");
+  secaoEntrada.classList.add("transicao"); // Adiciona a classe para ativar a animação
+});
+
+
+</script>
+
+<hr class="hr">
+<button id="botao-end" class="btn btn-primary" type="submit">Criar Publicação</button>
+<br>
+
+<br>
+<br>
+<br>
+
+<div class="container bootstrap snippets bootdey">
+  <div class="col-md-6">
+      <div class="widget widget-blog">
+          <div class="widget-blog-cover">
+              <img src="https://th.bing.com/th/id/OIP.eqyUeOX5zAOmQ4FJdyR30QHaEH?pid=ImgDet&rs=1" alt="">
+          </div>
+          <div class="widget-blog-author">
+              <div class="widget-blog-author-image">
+                  <img src="LOGO-BALDAN.jpg" alt="">
+              </div>
+              <div class="widget-blog-author-info">
+                  <h5 class="m-t-0 m-b-1">Baldan</h5>
+                  <p class="text-muted m-0 f-s-11">Máquinas</p>
+              </div>
+          </div>
+          <div class="widget-blog-content" style="max-height: 200px; overflow: hidden;">
+              <h5 class="text-post">AVOLA - Pulverizador Autopropelido</h5>
+              <p class="text-post">
+                  Um pulverizador resistente e versátil com opções de reservatórios de 2000 ou 2500 litros e 
+                  barras de 25 a 30 metros. Equipado com um motor de 190 cv e uma transmissão hidrostática bem ajustada, 
+                  é capaz de navegar em diferentes tipos de terreno e superar obstáculos devido ao seu baixo peso...
+                  <center><button id="botao-center" class="btn btn-primary" type="submit">Ler mais</button></center>
+              </p>
+          </div>
+      </div>
+  </div>
+  <div class="col-md-6">
+      <div class="widget widget-blog">
+          <div class="widget-blog-cover" >
+              <img src="https://www.baldan.com.br/uploads/pagina/elemento/campo/2016/04/eruWk8dL24jkoyFx/20141126100647GqTvdqtFCH_600x450.webp" alt="">
+          </div>
+          <div class="widget-blog-author">
+              <div class="widget-blog-author-image">
+                  <img src="LOGO-BALDAN.jpg" alt="">
+              </div>
+              <div class="widget-blog-author-info">
+                  <h5 class="m-t-0 m-b-1">Baldan</h5>
+                  <p class="text-muted m-0 f-s-11">Máquinas</p>
+              </div>
+          </div>
+          <div class="widget-blog-content" style="max-height: 200px; overflow: hidden;">
+              <h5 class="text-post">Apresentamos com entusiasmo a DEMETRA, nossa mais recente inovação em tecnologia agrícola.</h5>
+              <p class="text-post">
+                  A Semeadora de Precisão Canavieira DEMETRA é a resposta para agricultores em
+                   busca de eficiência e precisão na semeadura de cana-de-açúcar.
+                  Com sua tecnologia de ponta, a DEMETRA...
+                  <center><button id="botao-center" class a="btn btn-primary" type="submit">Saiba mais</button></center>
+              </p>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+  <!--<div class="col-md-6">
+      <div class="widget widget-blog">
+        <div class="widget-blog-cover">
+          <img src="maquina-baldan.png" alt="">
+        </div>
+        <div class="widget-blog-author">
+          <div class="widget-blog-author-image">
+            <img src="LOGO-BALDAN.jpg" alt="">
+          </div>
+          <div class="widget-blog-author-info">
+            <h5 class="m-t-0 m-b-1 ">Baldan</h5>
+            <p class="text-muted m-0 f-s-11">Máquinas</p>
+          </div>
+        </div>
+        <div class="widget-blog-content">
+          <h5 class="text-post">Conheça nossos novos modelos de pulverizadores!</h5>
+          <p class="text-post">
+            Agora, a Baldan apresenta os mais recentes avanços em tecnologia agrícola. Nossos novos modelos de pulverizadores oferecem desempenho incomparável e eficiência em qualquer tipo de terreno. Seja você um agricultor experiente ou um pequeno produtor, nossos pulverizadores robustos e compactos são projetados para atender às suas necessidades.
+            <center><button id="botao-center" class="btn btn-primary" type="submit">Saiba mais</button></center>
+          </p>
+        </div>
+      </div>
+    </div>
+    -->
+    
+   
+   
+</div>
+
+</body>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const changeAvatarButton = document.getElementById("change-avatar");
+    const avatarImage = document.getElementById("perfil-usuario-img");
+    const fileUpload = document.getElementById("file-upload");
+
+    changeAvatarButton.addEventListener("click", function () {
+      fileUpload.click(); // Simula o clique no input de arquivo
+    });
+
+    fileUpload.addEventListener("change", function () {
+      const selectedImage = fileUpload.files[0];
+      if (selectedImage) {
+        const imageUrl = URL.createObjectURL(selectedImage);
+        avatarImage.src = imageUrl; // Atualiza a imagem de perfil
+      }
+    });
+  });
+  ////////////////////////////////////////////////////////////////////
+
+  <!-- Script JavaScript para controlar o modal -->
+
+// Get the modal
+var modal = document.getElementById('imageModal');
+var closeModal = document.getElementById('closeModal');
+var profilePictureButton = document.getElementById('profilePictureButton');
+var coverPhotoButton = document.getElementById('coverPhotoButton');
+var profilePictureUpload = document.getElementById('profile-picture-upload');
+var coverPhotoUpload = document.getElementById('cover-photo-upload');
+var perfilUsuarioImg = document.getElementById('perfil-usuario-img');
+var coverImage = document.getElementById('cover-image'); // Elemento da foto de capa
+
+// Ao clicar no ícone, exiba o modal
+var changeAvatarButton = document.getElementById('change-avatar');
+changeAvatarButton.addEventListener('click', function() {
+  modal.style.display = 'block';
+});
+
+// Ao clicar no botão "Mudar foto de perfil", ative o input para escolher a foto de perfil
+profilePictureButton.addEventListener('click', function() {
+  profilePictureUpload.click();
+});
+
+// Ao clicar no botão "Mudar foto de capa", ative o input para escolher a foto de capa
+coverPhotoButton.addEventListener('click', function() {
+  coverPhotoUpload.click();
+});
+// Função para atualizar a imagem do perfil
+function updateProfilePicture() {
+  var selectedImage = profilePictureUpload.files[0];
+
+  if (selectedImage) {
+    var reader = new FileReader();
+    reader.onload = function(e) {
+      perfilUsuarioImg.src = e.target.result;
+    };
+    reader.readAsDataURL(selectedImage);
+  }
+}
+
+// Função para atualizar a foto de capa (banner)
+function updateCoverPhoto() {
+  var selectedImage = coverPhotoUpload.files[0];
+
+  if (selectedImage) {
+    var reader = new FileReader();
+    reader.onload = function(e) {
+      coverImage.style.backgroundImage = 'url(' + e.target.result + ')';
+    };
+    reader.readAsDataURL(selectedImage);
+  }
+}
+
+// Event Listeners
+profilePictureUpload.addEventListener('change', updateProfilePicture);
+coverPhotoUpload.addEventListener('change', updateCoverPhoto);
+
+closeModal.addEventListener('click', function() {
+  modal.style.display = 'none';
+});
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+};
+
+</script>
+
+</html>

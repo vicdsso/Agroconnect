@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body {
+  margin-top: 20px;
+  padding: 0;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.modal {
+ 
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(62, 48, 48, 0.307); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #f5f5f5;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #999797;
+  width: 20%; /* Could be more or less, depending on screen size */
+height: 20%;
+border-radius: 5px;
+}
+/* O botão Fechar (X) */
+.close {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  color: #000;
+  font-size: 20px;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Adicionar Animação de Zoom */
+.animate {
+  animation: animatezoom 0.6s;
+}
+
+@keyframes animatezoom {
+  from { transform: scale(0); } 
+  to { transform: scale(1); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.fundo-verde{
+  background-color: #386034;
+}
+
+
+/*verde escuro - rgb(15, 128, 40)*/
+
+.perfil-usuario img {/*Nova imagem*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .banner .header {/*banner*/
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 16rem;
+    background: linear-gradient(0deg, #386034, #041f01);
+    border-radius: 0 0 20px 20px;
+  }
+   
+  .perfil-usuario {/*borda da logo*/
+    display: flex;
+    width: 180px;
+    height: 180px;
+    align-items: center;
+    justify-content: center;
+    border: 7px solid #000000;
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.425);
+    position: absolute;
+    bottom: -40px;
+    left: calc(50% - 90px);
+    z-index: 1;
+  }
+  
+  .banner .perfil-usuario .boton-avatar {/*icone trocar logo*/
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    border: 0;
+    background-color: #fff7f7;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2; /* Defina um z-index maior para que fique na frente da imagem */
+}
+
+
+
+
+
+
+/* Adicione essas regras ao seu CSS */
+.redes-sociais {
+  display: flex;
+  gap: 10px; /* Espaçamento entre os ícones */
+  position: absolute;
+  top: 20px; /* Ajuste a posição vertical conforme necessário */
+  right: 20px; /* Ajuste a posição horizontal conforme necessário */
+}
+
+.rede-social-link {
+  opacity: 0.7; /* Defina a opacidade padrão */
+  transition: opacity 0.3s ease-in-out; /* Adicione uma transição suave de opacidade */
+  display: inline-block;
+  margin-right: 10px; /* Espaçamento entre os ícones */
+}
+
+.rede-social-link:hover {
+  opacity: 1; /* Aumenta a opacidade quando o mouse passa sobre o ícone */
+}
+
+
+
+.rede-social-link img {
+  width: 30px; /* Tamanho dos ícones */
+  height: 30px; /* Tamanho dos ícones */
+}
+
+/* Estilize o ícone de e-mail e telefone se necessário */
+.rede-social-link.email img {
+  width: 40px; /* Tamanho personalizado para o ícone de e-mail */
+  height: 40px; /* Tamanho personalizado para o ícone de e-mail */
+}
+
+.rede-social-link.telefone img {
+  width: 40px; /* Tamanho personalizado para o ícone de telefone */
+  height: 40px; /* Tamanho personalizado para o ícone de telefone */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#botao-end{
+	background-color: #66CDAA;
+	color: rgb(0, 0, 0);
+	border-style: none;
+margin-right: 3%;
+cursor: pointer;
+	margin-top: 10px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  font-size: large;
+  float: inline-end;
+  outline: 0;
+  
+}
+
+
+/*nome empresa*/
+.nomeEmpresa h1{
+	font-weight: 700;
+	color:rgb(0, 0, 0);
+	font-size:35px;
+padding-top: 50px;
+
+}
+/* Estilos para o título da empresa */
+
+
+/* Estilos para o subtítulo "Sobre a Empresa" */
+.sobre-titulo {
+  font-size: 24px;
+  color: #000000; /* Escolha uma cor que destaque, mas não seja muito forte */
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Estilos para o lema da empresa */
+.sobre {
+  font-size: 18px;
+  color: #000000; /* Escolha uma cor apropriada */
+  text-align: center;
+  margin-top: 30px;
+  margin: 20px; /* Adiciona margem */
+  font-weight: bold;
+}
+
+
+.tituloSobre{
+	text-align:center;
+	font-size: 25px;
+	font-weight: 400;
+  font-weight: bold;
+	color: rgb(0, 0, 0);
+ 
+}
+
+  h3{
+    padding-top: 25px;
+  font-size: larger;
+  color: #000000;
+
+  }
+  
+  blockquote {
+    font-style: italic;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    border-left: 5px solid #66CDAA !important; 
+    padding-left: 10px; 
+  }
+  
+  blockquote footer {
+    text-align: right;
+    font-weight: bold;
+    color: #66CDAA !important;
+  }
+  
+  .transicao-sobre {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+  }
+  
+  .transicao-sobre.transicao {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+  
+  .transicao-lema blockquote {
+    animation: transicao-lema 21s forwards;
+  }
+  
+  @keyframes transicao-lema {
+    0% {
+      max-width: 10;
+    }
+    100% {
+      max-width: 100%;
+    }
+  }
+  
+  
+
+/* Adiciona transições aos textos "Sobre a Empresa"  
+h2.sobre-titulo, blockquote footer {
+  transition: color 0.3s ease-in-out;  Adiciona uma transição de cor com duração de 0.3 segundos 
+}
+
+ Quando o mouse passar por cima dos elementos, a cor mudará para #66CDAA 
+h2.sobre-titulo:hover, blockquote footer:hover {
+  color: #66CDAA;  Cor que deseja quando passar o mouse por cima 
+}
+*/
+
+
+
+
+  .hr{
+    color: #000000;
+ } 
+ 
+ h5{
+  padding-top: 25px;
+ font-size: 30px;
+ 
+ }
+
+ 
+ /*att: vic - divulgação*/
+.containerD{
+  border-radius: 5px;
+  background-color: #bac7b8;
+  height: 700px;
+width: 40%;
+/*centralizar*/
+margin-left: auto;
+  margin-right: auto; 
+flex: 2;
+}
+
+.logoPOSTAGEM{
+  margin-bottom: 20px;
+  padding-top: 15px;
+  margin-left: 10px;
+  width: 65px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid rgb(255, 255, 255);
+  background: url("https://yt3.ggpht.com/a/AGF-l79AB1cw07nMg9_GNZkMSiubyj5HBPR_Lk5jGw=s900-c-k-c0xffffffff-no-rj-mo");
+  background-size: cover;
+}
+
+p{
+  margin-top: px;/*tava 14px, mudei pq o noot de casa bugou com 14px e ficou centralizado com 1px*/
+  margin-left: 70px;
+  color: rgb(0, 0, 0);
+    }
+ 
+    .imagemMaquina{
+      width: 450px;
+      height: 375px;
+    }
+  
+    #botao-center{
+      background-color: #66CDAA;
+      color: rgb(0, 0, 0);
+      border-style: none;
+      cursor: pointer;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 5px;
+      font-size: medium;
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      .widget {
+          border: none;
+          box-shadow: 0 2px 0 rgba(0,0,0,.07);
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+          margin-bottom: 20px;
+          position: relative;
+          background: #000000;
+          padding: 20px;
+          display: block;
+      }
+      
+      .widget-blog-cover {
+          overflow: hidden;
+          padding-top: 60%;
+      }
+      
+      .widget-blog-cover, .widget-stat-header {
+          position: relative;
+          border-radius: 5px 5px 0 0;
+          margin: -20px -20px 20px;
+      }
+      
+      .animation-grow-hover, .widget-blog .widget-blog-cover img {
+          transition: all .1s ease-in-out;
+      }
+      
+      .widget-blog-cover img:hover{
+          max-width: 110%;
+          min-height: 110%;
+          margin-left: -5%;
+          margin-top: -5%;    
+      }
+      
+      .widget-blog-cover img {
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          max-width: 100%;
+          min-height: 100%;
+      }
+      
+      .widget-blog-author {
+          margin: -20px -20px 0;
+          padding: 10px 20px;
+      }
+      
+      .widget-blog-author-image {
+          float: left;
+          margin-top: -30px;
+          padding: 5px;
+          border-radius: 70px;
+          width: 70px;
+          height: 70px;
+          background: #fff;
+          position: relative;
+      }
+      
+      .widget-blog-author-image img {
+          max-width: 100%;
+          border-radius: 70px;
+      }
+      
+      .text-muted {
+          color: #ffffff;
+      }
+      .f-s-11 {
+          font-size: 11px!important;
+      }
+      .m-0 {
+          margin: 0!important;
+      }
+
+.text-post{
+  color: #fff;
+}
+
+
+ 
+  /* tablet*/
+  @media screen and (max-width: 1500px) and (min-width: 480px){   
+    /*container do lema da empresa*/
+.container-editar {
+  height: 200px;
+}
+
+h4{
+  padding-left: 25%;
+  margin-right: 8%;
+}
+  }
+
+
+  
+  /* celular */
+  @media screen and (max-width: 470px) and (min-width: 250px){ 
+    
+
+      }
+     

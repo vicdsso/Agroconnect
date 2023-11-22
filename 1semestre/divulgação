@@ -1,0 +1,27 @@
+
+
+  <div class="container bootstrap snippets bootdey">
+    <div class="col-md-6">
+        <div class="widget widget-blog">
+            <div class="widget-blog-cover">
+                <img src="https://baldan.vtexassets.com/arquivos/ids/156211-800-auto?v=638187589372070000&width=800&height=auto&aspect=true" alt="">
+            </div>
+            <div class="widget-blog-author">
+                <div class="widget-blog-author-image">
+                    <img src="LOGO-BALDAN.jpg" alt="">
+                </div>
+                <div class="widget-blog-author-info">
+                    <h5 class="m-t-0 m-b-1">Baldan</h5>
+                    <p class="text-muted m-0 f-s-11">Máquinas</p>
+                </div>
+            </div>
+            <div class="widget-blog-content">
+                <h5 class="text-post">AVOLA - Pulverizador Autopropelido</h5>
+                <p class="text-post">
+                  Um pulverizador resistente e versátil com opções de reservatórios de 2000 ou 2500 litros e 
+                  barras de 25 a 30 metros. Equipado com um motor de 190 cv e uma transmissão hidrostática bem ajustada, 
+                  é capaz de navegar em diferentes tipos de terreno e superar obstáculos devido ao seu baixo peso.
+                </p>
+            </div>
+        </div>
+    </div>
