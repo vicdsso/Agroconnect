@@ -338,6 +338,7 @@ servicos
     width: 7%;
     margin-top: -50px;
     margin-left: 100%;
+    cursor:pointer;
 }
 
 .texto-parceiros {
