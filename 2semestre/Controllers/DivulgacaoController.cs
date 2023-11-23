@@ -12,5 +12,14 @@ namespace Agroconnect_Login.Controllers
         {
             return View();
         }
+
+        public IActionResult Maquina()
+        {
+            return View();
+        }
+        public IActionResult Servico()
+        {
+            return View();
+        }
     }
 }

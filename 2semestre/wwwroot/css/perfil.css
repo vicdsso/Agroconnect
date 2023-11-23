@@ -1,13 +1,11 @@
 ﻿
 
-#titulo-Divulg {
-    font-size: 50px;
-    padding-top: 100px;
-    margin-bottom: 40px;
-    color: black;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+p {
+    color: #ffffff;
+}
 
 body {
     min-height: 100vh;
@@ -292,7 +290,9 @@ p {
 
 
 
-
+.Divulgacao-titulo {
+    color: black;
+}
 
 
 /*maquinas max/min-height 600
@@ -337,7 +337,7 @@ servicos
     align-items: end;
     width: 7%;
     margin-top: -50px;
-    margin-left: 90%;
+    margin-left: 100%;
 }
 
 .texto-parceiros {
@@ -428,8 +428,15 @@ servicos
         margin-right: 0px!important; /* Remova a margem entre as publicações */
         margin-bottom: 20px; /* Mantenha uma margem na parte inferior para espaçamento */
     }
+
+
+
+
    
-   
+
+    .estrutura {
+        width: 100% !important;
+    }
 }
 
 
@@ -439,14 +446,7 @@ servicos
     #titulo-Divulg {
         font-size: 20px;
     }
-    .widget {
 
-        min-width: 300px;
-        max-width: 300px !important;
-        min-height: 700px;
-        max-height: 700px !important;
-       
-    }
 
 
     /* Descrição */
@@ -457,11 +457,9 @@ servicos
     }
 
 
-
-
-
-
-
+    .estrutura {
+        width: 100% !important;
+    }
 
 
 }

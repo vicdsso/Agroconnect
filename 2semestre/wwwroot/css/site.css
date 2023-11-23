@@ -301,14 +301,9 @@ a[b-x4zqpjn6vy] {
         word-wrap: break-word;
     }
 
-    #titulo-Divulg {
-        padding-top: 0px;
-        margin-bottom: 0px;
-    }
 
-    .sobre {
-        display: none;
-    }
+
+    
 }
 
 /* celular */
@@ -330,10 +325,8 @@ a[b-x4zqpjn6vy] {
     }
 
 
-    #titulo-Divulg {
-        padding-top: 0px;
-        margin-bottom: 0px;
-    }
+
+
 }
 /* Estilos para o footer */
 footer {

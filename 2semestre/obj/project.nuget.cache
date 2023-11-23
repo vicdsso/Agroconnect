@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V/IgKIYPU2QsHp/H7H8iYVSmEPu6WhjnucN9I0DfMFTraabA0/WdBH4D8kGRd2tq+43ta2NVc8FdBqnWz1lV/Q==",
+  "dgSpecHash": "ZpZZ7qn/10W2Tf2xdYo8zDt+78ktQz3hFHdlnPQSJM+kki1OYy/PmdR6LQjQhxwE1xaA5XSxGge+Yjq6xhzwrA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vicds\\OneDrive\\Área de Trabalho\\FATEC\\Agroconnect-Login (2)\\Agroconnect-Login.csproj",
+  "projectFilePath": "C:\\Users\\vicds\\OneDrive\\Área de Trabalho\\PROJETOS GIT\\agroconnect\\2semestre\\Agroconnect-Login.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vicds\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\vicds\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
