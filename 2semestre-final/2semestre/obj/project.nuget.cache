@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ICw7tDQvVTA+q1Y9SMC2Ft2DXBK+5aueTeTlliY8EfwtZnY6Fgt0WTpB9tjMTwNZ03AbyIXu7wEIpIqFL+FVXg==",
+  "dgSpecHash": "aVINtrp1qnEte0g485oNQEjkXzQfJXuZo0lQZW+gkFGya6B2YjiHQ44x+y8AsmD/aC1I+a2P9irCDUii8NrFQQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vicds\\OneDrive\\Área de Trabalho\\PROJETOS GIT\\agroconnect\\MVC + CRUD + LOGIN IDENTITY + BARRA DE PESQUISA\\2semestre\\Agroconnect-Login.csproj",
+  "projectFilePath": "C:\\Users\\vicds\\OneDrive\\Área de Trabalho\\PROJETOS GIT\\agroconnect\\2semestre-final\\2semestre\\Agroconnect-Login.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vicds\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\vicds\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

@@ -11,6 +11,6 @@
 - Editar perfil responsivo p/ tablet e celular - parte cortada
 - Aumentar login e cadastro p/ tablet e celular
 
-rotina animation botao scroll?????? douglas
+rotina de transição do botao scroll?????? douglas
 
 

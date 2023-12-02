@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vicds\\OneDrive\\Área de Trabalho\\PROJETOS GIT\\agroconnect\\MVC + CRUD + LOGIN IDENTITY + BARRA DE PESQUISA\\2semestre\\Agroconnect-Login.csproj": {}
+    "C:\\Users\\vicds\\OneDrive\\Área de Trabalho\\PROJETOS GIT\\agroconnect\\2semestre-final\\2semestre\\Agroconnect-Login.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vicds\\OneDrive\\Área de Trabalho\\PROJETOS GIT\\agroconnect\\MVC + CRUD + LOGIN IDENTITY + BARRA DE PESQUISA\\2semestre\\Agroconnect-Login.csproj": {
+    "C:\\Users\\vicds\\OneDrive\\Área de Trabalho\\PROJETOS GIT\\agroconnect\\2semestre-final\\2semestre\\Agroconnect-Login.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vicds\\OneDrive\\Área de Trabalho\\PROJETOS GIT\\agroconnect\\MVC + CRUD + LOGIN IDENTITY + BARRA DE PESQUISA\\2semestre\\Agroconnect-Login.csproj",
+        "projectUniqueName": "C:\\Users\\vicds\\OneDrive\\Área de Trabalho\\PROJETOS GIT\\agroconnect\\2semestre-final\\2semestre\\Agroconnect-Login.csproj",
         "projectName": "Agroconnect-Login",
-        "projectPath": "C:\\Users\\vicds\\OneDrive\\Área de Trabalho\\PROJETOS GIT\\agroconnect\\MVC + CRUD + LOGIN IDENTITY + BARRA DE PESQUISA\\2semestre\\Agroconnect-Login.csproj",
+        "projectPath": "C:\\Users\\vicds\\OneDrive\\Área de Trabalho\\PROJETOS GIT\\agroconnect\\2semestre-final\\2semestre\\Agroconnect-Login.csproj",
         "packagesPath": "C:\\Users\\vicds\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vicds\\OneDrive\\Área de Trabalho\\PROJETOS GIT\\agroconnect\\MVC + CRUD + LOGIN IDENTITY + BARRA DE PESQUISA\\2semestre\\obj\\",
+        "outputPath": "C:\\Users\\vicds\\OneDrive\\Área de Trabalho\\PROJETOS GIT\\agroconnect\\2semestre-final\\2semestre\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vicds\\AppData\\Roaming\\NuGet\\NuGet.Config",
