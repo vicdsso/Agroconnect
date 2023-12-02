@@ -1,0 +1,462 @@
+﻿
+
+#titulo-Divulg {
+    font-size: 50px;
+    padding-top: 100px;
+    margin-bottom: 40px;
+    color: black;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    padding: 0;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.fundo-verde {
+    background-color: #386034;
+}
+
+.fundo-white{
+    background-color: aliceblue;
+}
+
+
+.perfil-usuario img { /*Nova imagem*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.banner .header { /*banner*/
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 16rem;
+    background: linear-gradient(0deg, #386034, #041f01);
+    border-radius:  20px 20px;
+}
+
+.perfil-usuario { /*borda da logo*/
+    display: flex;
+    width: 180px;
+    height: 180px;
+    align-items: center;
+    justify-content: center;
+    border: 7px solid #000000;
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.425);
+    position: absolute;
+    bottom: -40px;
+    left: calc(50% - 90px);
+    z-index: 1;
+}
+
+
+
+
+
+
+
+/* Adicione essas regras ao seu CSS */
+.redes-sociais {
+    display: flex;
+    gap: 10px; /* Espaçamento entre os ícones */
+    position: absolute;
+    top: 20px; /* Ajuste a posição vertical conforme necessário */
+    right: 20px; /* Ajuste a posição horizontal conforme necessário */
+}
+
+.rede-social-link {
+    opacity: 0.7; /* Defina a opacidade padrão */
+    transition: opacity 0.3s ease-in-out; /* Adicione uma transição suave de opacidade */
+    display: inline-block;
+    margin-right: 10px; /* Espaçamento entre os ícones */
+}
+
+    .rede-social-link:hover {
+        opacity: 1; /* Aumenta a opacidade quando o mouse passa sobre o ícone */
+    }
+
+
+
+    .rede-social-link img {
+        width: 30px; /* Tamanho dos ícones */
+        height: 30px; /* Tamanho dos ícones */
+    }
+
+    /* Estilize o ícone de e-mail e telefone se necessário */
+    .rede-social-link.email img {
+        width: 40px; /* Tamanho personalizado para o ícone de e-mail */
+        height: 40px; /* Tamanho personalizado para o ícone de e-mail */
+    }
+
+    .rede-social-link.telefone img {
+        width: 40px; /* Tamanho personalizado para o ícone de telefone */
+        height: 40px; /* Tamanho personalizado para o ícone de telefone */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#botao-end {
+    background-color: #66CDAA;
+    color: rgb(0, 0, 0);
+    border-style: none;
+    margin-right: 3%;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    font-size: large;
+    float: inline-end;
+    outline: 0;
+}
+
+
+/*nome empresa*/
+.nomeEmpresa {
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    padding-top: 60px;
+}
+/* Estilos para o título da empresa */
+
+
+/* Estilos para o subtítulo "Sobre a Empresa" */
+.sobre-titulo {
+    font-size: 24px;
+    color: #000000 !important; /* Escolha uma cor que destaque, mas não seja muito forte */
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Descrição */
+.sobre-descricao {
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+    margin-top: 10px !important;
+   
+    font-weight: bold;
+}
+
+
+.tituloSobre {
+   
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+h3 {
+    padding-top: 25px;
+    font-size: larger;
+    color: #000000;
+}
+/**LEMA*/
+blockquote {
+    font-style: italic;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    border-left: 5px solid #66CDAA !important;
+   
+}
+
+    blockquote footer {
+        text-align: right;
+        font-weight: bold;
+        color: #66CDAA !important;
+    }
+
+.transicao-sobre {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+    .transicao-sobre.transicao {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+
+.transicao-lema blockquote {
+    animation: transicao-lema 21s forwards;
+}
+
+@keyframes transicao-lema {
+    0% {
+        max-width: 10px;
+    }
+
+    100% {
+        max-width: 100%;
+    }
+}
+
+
+
+/* Adiciona transições aos textos "Sobre a Empresa"  
+h2.sobre-titulo, blockquote footer {
+  transition: color 0.3s ease-in-out;  Adiciona uma transição de cor com duração de 0.3 segundos 
+}
+
+ Quando o mouse passar por cima dos elementos, a cor mudará para #66CDAA 
+h2.sobre-titulo:hover, blockquote footer:hover {
+  color: #66CDAA;  Cor que deseja quando passar o mouse por cima 
+}
+*/
+
+
+
+
+.hr {
+    color: #000000;
+}
+
+h5 {
+ 
+    font-size: 20px;
+}
+
+
+/*att: vic - divulgação*/
+.containerD {
+    border-radius: 5px;
+    background-color: #bac7b8;
+    height: 700px;
+    width: 40%;
+    /*centralizar*/
+    margin-left: auto;
+    margin-right: auto;
+    flex: 2;
+}
+
+.logoPOSTAGEM {
+    margin-bottom: 20px;
+    padding-top: 15px;
+    margin-left: 10px;
+    width: 65px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid rgb(255, 255, 255);
+    background: url("https://yt3.ggpht.com/a/AGF-l79AB1cw07nMg9_GNZkMSiubyj5HBPR_Lk5jGw=s900-c-k-c0xffffffff-no-rj-mo");
+    background-size: cover;
+}
+
+p {
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*maquinas max/min-height 600
+produtos 700
+servicos
+*/
+.estrutura {
+    min-height: 700px;
+    max-height: 1000px;
+    width: 500px;
+    border: 2px solid black;
+    margin: 50px auto;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #000000;
+}
+
+.logo-parceiros {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-size: cover;
+    position: absolute;
+    margin-top: 55px;
+    margin-left: 21px;
+    transform: translateY(-50%);
+}
+
+.nome-parceiro {
+    margin-left: 80px;
+    font-size: 13px;
+    margin-top: 40px;
+}
+
+.tipo-parceiro {
+    margin-left: 80px;
+    font-size: 10px;
+    margin-top: -15px;
+}
+
+.pontinhos {
+    align-items: end;
+    width: 7%;
+    margin-top: -50px;
+    margin-left: 90%;
+}
+
+.texto-parceiros {
+    margin-left: 10px;
+    max-height: 100px; /* Altura máxima inicial */
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.ler-mais {
+    cursor: pointer;
+    color: green;
+    text-align: end;
+}
+
+.imagem-parceiros {
+    width: 95%;
+    height: 40%;
+    border-radius: 5px;
+}
+
+#botoes-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.curtirFavoritar {
+    width: 30px;
+    height: 30px;
+}
+
+#botao-center {
+    background-color: #66CDAA;
+    color: rgb(0, 0, 0);
+    border-style: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: medium;
+}
+
+.post-textos {
+    color: white !important;
+}
+
+.curso-pointer {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.zoom-in:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+#botao-center {
+    background-color: #66CDAA;
+    color: rgb(0, 0, 0);
+    border-style: none;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    font-size: medium;
+    display: block;
+    margin-top: 10px;
+}
+
+
+
+/* tablet*/
+@media screen and (max-width: 1500px) and (min-width: 480px) {
+    /*container do lema da empresa*/
+    .container-editar {
+        height: 200px;
+    }
+
+    h4 {
+        padding-left: 25%;
+        margin-right: 8%;
+    }
+
+    .col-md-6 {
+        width: 100%!important; /* Faça com que as publicações ocupem a largura total */
+        margin-right: 0px!important; /* Remova a margem entre as publicações */
+        margin-bottom: 20px; /* Mantenha uma margem na parte inferior para espaçamento */
+    }
+   
+   
+}
+
+
+
+/* celular */
+@media screen and (max-width: 470px) and (min-width: 250px) {
+    #titulo-Divulg {
+        font-size: 20px;
+    }
+    .widget {
+
+        min-width: 300px;
+        max-width: 300px !important;
+        min-height: 700px;
+        max-height: 700px !important;
+       
+    }
+
+
+    /* Descrição */
+    /**LEMA*/
+    p {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
+
+
+

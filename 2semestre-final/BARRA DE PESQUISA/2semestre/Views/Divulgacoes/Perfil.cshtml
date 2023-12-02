@@ -1,0 +1,180 @@
+﻿@{
+    ViewData["Title"] = "Perfil";
+}
+<section class="fundo-verde">
+    <section class="banner">
+        <div class="header">
+            <div class="cover" id="cover-image">
+                <div class="perfil-usuario">
+                    <img id="perfil-usuario-img" src="~/img/user-temporario.png" alt="">
+                    <button type="button" class="boton-avatar" id="change-avatar">
+                        <!--icone-->
+                    </button>
+                    <input id="profile-picture-upload" type="file" style="display: none;" accept="~img/*">
+                    <input id="cover-photo-upload" type="file" style="display: none;" accept="~img/*">
+                </div>
+
+
+                <!-- Ícones das redes sociais -->
+                <div class="redes-sociais">
+                    <a href="#" class="rede-social-link"><img src="~/img/facebook.png" alt="Facebook"></a>
+                    <a href="#" class="rede-social-link"><img src="~/img/instagram.png" alt="Instagram"></a>
+                    <a href="#" class="rede-social-link"><img src="~/img/whatsapp.png" alt="WhatsApp"></a>
+                    <a href="#" class="rede-social-link"><img src="~/img/linkedin.png" alt="LinkedIn"></a>
+                    <a href="mailto:seuemail@gmail.com" class="rede-social-link"><img src="~/img/email.png" alt="Email"></a>
+                    <a href="tel:seunumero" class="rede-social-link"><img src="~/img/telefone.png" alt="Telefone"></a>
+                </div>
+
+                <br>
+                <br>
+                <br>
+
+            </div>
+        </div>
+    </section>
+    <a href="~/Home/Editar" class="rede-social-link btn" id="botao-end">Editar perfil</a>
+
+    <!-- Modal para escolher entre foto de perfil e foto de capa -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content animate">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Escolha uma opção</h2>
+            <button id="profilePictureButton">Mudar foto de perfil</button>
+            <button id="coverPhotoButton">Mudar foto de capa</button>
+        </div>
+    </div>
+
+
+
+
+    <!-- Botão para editar fotos de perfil e de capa -->
+
+    <center>
+        <!-- Nome da empresa -->
+        <div class="nomeEmpresa">
+            <h1 class="nomeEmpresa">BALDAN</h1>
+            <h2 class="sobre-titulo">Sobre a Empresa</h2>
+        </div>
+        <div class="container-end">
+            <!--<div class="container-end  transicao-sobre">-->
+            <h3 class="sobre">
+                Procurando por máquinas e implementos agrícolas de alta qualidade? A Baldan é a resposta. Com uma rica tradição e compromisso com a excelência, somos líderes no setor agrícola. Oferecemos uma ampla variedade de equipamentos que atendem às necessidades dos agricultores e produtores.
+
+                Na Baldan, acreditamos que a qualidade é a base do nosso sucesso. Nossos produtos são projetados e fabricados com os mais altos padrões, garantindo durabilidade e desempenho excepcionais. Seja você um grande fazendeiro ou um pequeno proprietário, nossas soluções sob medida são ideais para todas as situações.
+
+                Além de nossa experiência em equipamentos agrícolas, a Baldan está comprometida com a inovação. Estamos constantemente pesquisando e desenvolvendo novas tecnologias e práticas agrícolas sustentáveis para melhorar a produtividade e o sucesso de nossos clientes.
+
+                Venha conhecer a Baldan. Junte-se a nós nesta jornada e experimente o que é ser parte de uma história de sucesso.
+            </h3>
+        </div>
+        <blockquote class="transicao-lema">
+            "Se foram eles os alicerces, seremos nós outros parede sólida de segurança; se eles plantaram, não nos compete colher, mas continuar plantando, pois que a colheita nós oferecemos ao povo brasileiro."
+            <footer>- Oscar Baldan</footer>
+        </blockquote>
+    </center>
+</section>
+
+
+<!-- Modal para escolher entre foto de perfil e foto de capa 
+<div id="imageModal" class="modal">
+    <div class="modal-content animate">
+        <span class="close" id="closeModal">&times;</span>
+        <h2>Escolha uma opção</h2>
+        <button id="profilePictureButton">Mudar foto de perfil</button>
+        <button id="coverPhotoButton">Mudar foto de capa</button>
+    </div>
+</div>-->
+
+
+<hr class="hr">
+<button id="botao-end" class="btn btn-primary" type="submit">Criar Publicação</button>
+<br>
+
+<br>
+<br>
+<br>
+
+    <div class="container bootstrap snippets bootdey container">
+
+    <div class="col-md-6">
+        <div class="widget widget-blog row ">
+            <div class="widget-blog-cover">
+                <img src="https://th.bing.com/th/id/OIP.eqyUeOX5zAOmQ4FJdyR30QHaEH?pid=ImgDet&rs=1" alt="">
+            </div>
+            <div class="widget-blog-author">
+                <div class="widget-blog-author-image">
+                    <img src="~/img/LOGO-BALDAN.jpg" alt="">
+                </div>
+                <div class="widget-blog-author-info">
+                    <h5 class="m-t-0 m-b-1">Baldan</h5>
+                    <p class="text-muted m-0 f-s-11">Máquinas</p>
+                </div>
+            </div>
+            <div class="widget-blog-content">
+                <h5 class="text-post">AVOLA - Pulverizador Autopropelido</h5>
+                <h5 class="text-post">
+                    Um pulverizador resistente e versátil com opções de reservatórios de 2000 ou 2500 litros e
+                    barras de 25 a 30 metros. Equipado com um motor de 190 cv e uma transmissão hidrostática bem ajustada,
+                    é capaz de navegar em diferentes tipos de terreno e superar obstáculos devido ao seu baixo peso.
+                    <br>
+
+
+                    Reservatórios: Disponível em opções de 2000 ou 2500 litros.
+                    <br>
+                    Alcance: Barras de 25 a 30 metros para cobertura eficaz.
+                    <br>
+                    Potência: Motor de 190 cv para desempenho superior.
+                    <br>
+                    Versatilidade: Adapte-se a diversos tipos de terreno com sua transmissão hidrostática.
+                    <br>
+                    Confiabilidade: Supere obstáculos com facilidade devido ao seu baixo peso.
+                    <br>
+                </h5>
+                <center><button id="botao-center" class="btn btn-primary" type="submit">Saiba mais</button></center>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="col-md-6">
+        <div class="widget widget-blog row ">
+            <div class="widget-blog-cover">
+                <img src="https://www.baldan.com.br/uploads/pagina/elemento/campo/2016/04/eruWk8dL24jkoyFx/20141126100647GqTvdqtFCH_600x450.webp" alt="">
+            </div>
+            <div class="widget-blog-author">
+                <div class="widget-blog-author-image">
+                    <img src="~/img/LOGO-BALDAN.jpg" alt="">
+                </div>
+                <div class="widget-blog-author-info">
+                    <h5 class="m-t-0 m-b-1">Baldan</h5>
+                    <p class="text-muted m-0 f-s-11">Máquinas</p>
+                </div>
+            </div>
+            <div class="widget-blog-content">
+                <h5 class="text-post">Apresentamos com entusiasmo a DEMETRA, nossa mais recente inovação em tecnologia agrícola.</h5>
+                <h5 class="text-post">
+                    A Semeadora de Precisão Canavieira DEMETRA é a resposta para agricultores em
+                    busca de eficiência e precisão na semeadura de cana-de-açúcar.
+                    Com sua tecnologia de ponta, a DEMETRA.
+                    <br>
+                    Reservatórios: Disponível em opções de 2000 ou 2500 litros.
+                    <br>
+                    Alcance: Barras de 25 a 30 metros para cobertura eficaz.
+                    <br>
+                    Potência: Motor de 190 cv para desempenho superior.
+                    <br>
+                    Versatilidade: Adapte-se a diversos tipos de terreno com sua transmissão hidrostática.
+                    <br>
+                    Confiabilidade: Supere obstáculos com facilidade devido ao seu baixo peso.
+                    <br>
+                </h5>
+                <center><button id="botao-center" class="btn btn-primary" type="submit">Saiba mais</button></center>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

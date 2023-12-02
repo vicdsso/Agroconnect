@@ -1,0 +1,9 @@
+
+Kamy passar a barra de pesquisa p/ ca e sobre responsivo
+
+- Eu todas as postagens marcando curtir/favoritar;
+- criar divul.servicos
+- Terminar o crud publicação - parte do layout 
+- Mudar a conexão localdb pra o banco de dados mesmo
+
+rotina animation botao scroll?????? douglas

@@ -1,0 +1,55 @@
+﻿@model IEnumerable<AGROCONNECT.Models.Publicacao>//Publicacao esta verde e carro estava branco
+
+@{    
+    ViewData["Title"] = "Index";
+}
+
+<h1>Lista de Carros</h1>
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">Criar Novo&nbsp;<span class="fa fa-plus"></span></a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Titulo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descricao)
+            </th>
+         
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Titulo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descricao)
+                </td>
+               
+                <td>
+                    @* Botões do CRUD *@
+                    <a asp-action="Edit" class="btn btn-warning edit" asp-route-id="@item.Id">Editar&nbsp;<span class="fa fa-pencil-square-o"></span></a>
+                    <a asp-action="Details" class="btn btn-success details" asp-route-id="@item.Id">Detalhes&nbsp;<span class="fa fa-file-text-o"></span></a>
+                    <a asp-action="Delete" class="btn btn-danger delete" asp-route-id="@item.Id" onclick="return confirm('Deseja excluir este carro?');">Remover&nbsp;<span class="fa fa-trash-o"></span></a>
+                    @* Links das Actions *@
+                    @*
+                    @Html.ActionLink("Editar", "Edit", new { id=item.Id }) |
+                    @Html.ActionLink("Detalhes", "Details", new { id=item.Id }) |
+                    @Html.ActionLink("Remover", "Delete", new {  id=item.Id }, new { onclick = "return confirm('Deseja excluir sua publicação?');"})
+                    *@                  
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
