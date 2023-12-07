@@ -1,0 +1,416 @@
+
+
+
+
+
+/*cadastro*/
+#registerSubmit, #login-submit {
+    background-color: #66CDAA;
+    border: none;
+}
+/* ajouter une image au background, fixed, cover */
+.jumbotron {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url("https://beunderonde.nl/wp-content/uploads/2020/11/shutterstock_653708227-scaled.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+}
+
+
+/* appliquer un color au h1 et p #fff */
+.display-4, .lead {
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    padding: 40px;
+}
+/*cards*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+
+.cards {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    max-width: 820px;
+    flex-wrap: wrap !important;
+    width: 100%;
+}
+
+
+/*
+.cards {
+    margin-top: 200px;
+    margin-bottom: 200px;
+   
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    max-width: 820px;
+}*/
+
+.card--1 .card__img, .card--1 .card__img--hover {
+    background-image: url('https://www.mncorn.org/wp-content/uploads/2018/07/Anderson-0523.jpg') !important;
+}
+
+.card--2 .card__img, .card--2 .card__img--hover {
+    background-image: url('https://i.ytimg.com/vi/VynNWbOQzM8/maxresdefault.jpg') !important;
+}
+
+.card--3 .card__img, .card--3 .card__img--hover {
+    background-image: url('https://trialfacts.com/wp-content/uploads/2018/06/AdobeStock_73631653-scaled.jpeg') !important;
+}
+
+.card__like {
+    width: 18px;
+}
+
+.card__clock {
+    width: 15px;
+    vertical-align: middle;
+    fill: #AD7D52;
+}
+
+.card__time {
+    font-size: 12px;
+    color: #AD7D52;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.card__clock-info {
+    float: right;
+}
+
+.card__img {
+    visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 235px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card__info-hover {
+    position: absolute;
+    padding: 16px;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+}
+
+.card__img--hover {
+    transition: 0.2s all ease-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: absolute;
+    height: 235px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    top: 0;
+}
+
+.card {
+    display: flex;
+    margin-right: 35px;
+    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+    background-color: #66CDAA;
+    width: 33.3%;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+}
+
+
+.card {
+    margin-right: 20px; /* Reduzi a margem para melhor acomodar os cards */
+    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+    background-color: #66CDAA;
+    width: 30%; /* Ajustei a largura para 30% em telas grandes */
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+}
+
+    .card:hover {
+        box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+        transform: scale(1.10, 1.10);
+    }
+
+.card__info {
+    z-index: 2;
+    background-color: #50fd0023;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 16px 24px 24px 24px;
+}
+
+.card__category {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #868686;
+}
+
+.card__title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.card__by {
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.card__author {
+    font-weight: 600;
+    text-decoration: none;
+    color: #AD7D52;
+}
+
+.card:hover .card__img--hover {
+    height: 100%;
+    opacity: 0.3;
+}
+
+.card:hover .card__info {
+    background-color: transparent;
+    position: relative;
+}
+
+.card:hover .card__info-hover {
+    opacity: 1;
+}
+
+
+/**/
+/* Estilos básicos para a equipe */
+.team {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+   
+}
+.teamtitulo {
+    align-items: center;
+    text-align: center;
+    background-color: #F0FFF0;
+}
+    .team-member {
+    text-align: center;
+    margin: 20px;
+}
+
+    .team-member img {
+        width: 200px; /* Ajuste o tamanho conforme necessário */
+        height: auto;
+        border-radius: 50%; /* Forma redonda para a imagem */
+    }
+        .team-member2 img {
+            width: 200px; /* Ajuste o tamanho conforme necessário */
+            height: 200px;
+            border-radius: 50%; /* Forma redonda para a imagem */
+        }
+
+    .team-member h3 {
+        margin: 10px 0;
+    }
+
+    .team-member p {
+        color: #888;
+    }
+    /**/
+h2 {
+    color: #6a9505;
+}
+.botao-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 20px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-decoration: none;
+    display: none; /* Inicialmente oculto */
+    cursor: pointer;
+}
+
+    .botao-topo:hover {
+        background-color: #386034;
+    }
+
+
+a[b-x4zqpjn6vy] {
+    color: #fff !important;
+}
+
+
+@media screen and (max-width: 1500px) and (min-width: 480px) {
+    .cards {
+        margin-top: 50px; /* Ajustei a margem para telas médias */
+        display: flex;
+    }
+
+    .card {
+        width: 45%; /* Ajustei a largura para 45% em telas médias */
+        margin-right: 10px; /* Reduzi a margem para telas médias */
+        margin-bottom: 20px; /* Adicionei margem inferior para telas médias */
+    }
+
+
+    #img-sobre {
+        position: absolute;
+        width: 30%;
+        height:15%;
+        margin-top: 40px;
+    }
+
+
+    .sobre .detail-box a {
+
+        margin-top: 20px;
+    }
+
+    .sobre .detail-box p {
+   
+    margin-top: -10px;
+}
+    .texto-sobre {
+        position: relative;
+        font-size: 22px;
+        left: 25%;
+        top: 35px;
+        word-wrap: break-word;
+    }
+
+    #titulo-Divulg {
+        padding-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .sobre {
+        display: none;
+    }
+}
+
+/* celular */
+@media screen and (max-width: 470px) and (min-width: 250px) {
+    .cards {
+        margin-top: 30px; /* Ajustei a margem para telas pequenas */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 70%; /* Ocupa 100% da largura em telas pequenas */
+        margin-right: 0; /* Removi a margem em telas pequenas */
+        margin-bottom: 20px; /* Adicionei margem inferior para telas pequenas */
+    }
+
+    .sobre {
+      display:none;
+    }
+
+
+    #titulo-Divulg {
+        padding-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+/* Estilos para o footer */
+footer {
+    background-color: #F0FFF0;
+    color:black;
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .footer-content p {
+        margin: 0;
+    }
+
+    .footer-content ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+    }
+
+        .footer-content ul li {
+            margin-right: 20px;
+        }
+
+            .footer-content ul li:last-child {
+                margin-right: 0;
+            }
+
+            .footer-content ul li a {
+                color:black;
+                text-decoration: none;
+            }
+
+                .footer-content ul li a:hover {
+                    text-decoration: underline;
+                }
+.filtro-container {
+    margin-bottom: 10px; /* Espaço abaixo da barra de pesquisa */
+    flex-direction: column;
+    z-index: 1000; /* Ajuste o valor de z-index para garantir que sobreponha o fundo */
+}
+
+.item {
+    display: none; /* Cada item ocupa uma linha inteira */
+    margin-bottom: 0px; /* Espaço entre os itens */
+    border: 1px solid #ccc; /* Adicione uma borda para destacar os itens */
+    padding: 10px;
+   
+}
+
+    .item a {
+        color: black;
+    }
+
+.icone {
+    width: 27px; /* ajuste a largura da imagem conforme necessário */
+    height: 27px; /* ajuste a altura da imagem conforme necessário */
+    border-radius: 50%; /* torna a imagem redonda */
+    border-block-color: black;
+    margin-right: 10px; /* ajuste a margem entre a imagem e o texto conforme necessário */
+}
+.pesquisaC {
+    width: 12.8%;
+    position: absolute;
+    z-index: 9999; /* Valor alto para garantir que esteja acima de outros elementos */
+    background-color: #F0FFF0;
+}

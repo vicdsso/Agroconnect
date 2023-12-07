@@ -1,0 +1,206 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+    ViewData["Title"] = "Index";
+}
+@*
+<h1>Lista de Publicações</h1>
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">Criar Novo&nbsp;<span class="fa fa-plus"></span></a>
+</p>
+ *@
+
+
+<section class="fundo-verde">
+    <section class="banner">
+
+        <div class="header">
+            <!--<img src="https://digistrat.com.br/wp-content/uploads/2021/04/logo-baldan-connected-marrom.jpeg">-->
+            <div class="cover" id="cover-image">
+                <div class="perfil-usuario">
+                    <img id="perfil-usuario-img" src="~/img/bellaVista.jpg" alt="">
+
+
+                    <input id="profile-picture-upload" type="file" style="display: none;" accept="~img/*">
+                    <input id="cover-photo-upload" type="file" style="display: none;" accept="~img/*">
+                </div>
+
+
+                <!-- Ícones das redes sociais -->
+                <div class="redes-sociais">
+                    <a href="#" class="rede-social-link"><img src="~/img/facebook.png" alt="Facebook"></a>
+                    <a href="#" class="rede-social-link"><img src="~/img/instagram.png" alt="Instagram"></a>
+                    <a href="#" class="rede-social-link"><img src="~/img/whatsapp.png" alt="WhatsApp"></a>
+                    <a href="#" class="rede-social-link"><img src="~/img/linkedin.png" alt="LinkedIn"></a>
+                    <a href="mailto:seuemail@gmail.com" class="rede-social-link"><img src="~/img/email.png" alt="Email"></a>
+                    <a href="tel:seunumero" class="rede-social-link"><img src="~/img/telefone.png" alt="Telefone"></a>
+                </div>
+
+                <br>
+                <br>
+                <br>
+
+            </div>
+        </div>
+    </section>
+  
+
+
+
+    <style>
+        .editar-perfil {
+            margin-top: -60px !important;
+        }
+    </style>
+
+
+    <!-- Botão para editar fotos de perfil e de capa -->
+
+    <center>
+        <!-- Nome da empresa -->
+        <div>
+            <h3 class="nomeEmpresa">Bella Vista</h3>
+            <h3 class="sobre-titulo">Sobre a Empresa</h3>
+        </div>
+        <div style="color:#000000;" id="DescricaoElema">
+            <p id="sobre-descricao">
+                A Baldan oferece máquinas e implementos agrícolas de alta qualidade,
+                sendo líder no setor agrícola. Seus produtos são feitos com altos padrões de
+                qualidade, visando durabilidade e desempenho...
+            </p>
+            <p id="lerMais">Leia mais</p>
+
+            <div id="descricaoCompleta" style="display: none; color:#000000;">
+                <p> Matão-SP</p>
+                <p>  https://www.baldan.com.br/</p>
+                <p id="sobre-descricao">A Bella Vista oferece máquinas e implementos agrícolas de alta qualidade, sendo líder no setor agrícola. Seus produtos são feitos com altos padrões de qualidade, visando durabilidade e desempenho excepcionais. Adaptáveis a qualquer escala, desde grandes fazendeiros até pequenos proprietários, suas soluções personalizadas atendem a diversas necessidades. Além disso, a empresa se destaca pelo compromisso com a inovação, constantemente pesquisando e desenvolvendo novas tecnologias e práticas sustentáveis para melhorar a produtividade e o sucesso de seus clientes. Convidam a todos a se juntarem a essa jornada de sucesso.</p>
+                <blockquote class="transicao-lema">
+                    "Se foram eles os alicerces, seremos nós outros parede sólida de segurança; se eles plantaram, não nos compete colher, mas continuar plantando, pois que a colheita nós oferecemos ao povo brasileiro."
+                    <footer>- Oscar Baldan</footer>
+                </blockquote>
+            </div>
+        </div>
+    </center>
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const lerMaisButton = document.getElementById("lerMais");
+            const descricaoInicial = document.getElementById("sobre-descricao");
+            const descricaoCompleta = document.getElementById("descricaoCompleta");
+            const lerMenosButton = document.createElement("p");
+            lerMenosButton.innerHTML = "Ler Menos";
+            lerMenosButton.style.display = "none";
+
+            lerMaisButton.addEventListener("click", function () {
+                if (descricaoCompleta.style.display === "none") {
+                    descricaoCompleta.style.display = "block";
+                    descricaoInicial.style.display = "none";
+                    lerMaisButton.style.display = "none";
+                    lerMenosButton.style.display = "block";
+                }
+            });
+
+            lerMenosButton.addEventListener("click", function () {
+                descricaoCompleta.style.display = "none";
+                descricaoInicial.style.display = "block";
+                lerMaisButton.style.display = "block";
+                lerMenosButton.style.display = "none";
+            });
+
+
+            descricaoCompleta.parentNode.appendChild(lerMenosButton);
+        });
+    </script>
+
+
+
+
+
+</section>
+
+
+
+<br>
+<br>
+<br>
+
+
+<style>
+    .row {
+        color: white;
+    }
+</style>
+
+
+<section>
+    <div class="estrutura">
+
+        <div class="row">
+            <div class="col">
+                <img class="logo-parceiros" src="~/img/bellaVista.jpg">
+
+                <div class="post-textos">
+                    <p class="nome-parceiro">Bella Vista</p>
+
+
+                    <p class="tipo-parceiro">
+
+                        Empresa|Maquinas
+
+
+                    </p>
+
+
+                </div>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <a asp-action="Edit"><img src="~/img/editar.png" width="30px " height="30px"></a>
+                <a asp-action="Delete" onclick="return confirm('Deseja excluir esta publicação?');"><img src="~/img/excluir.png" width="30px " height="30px"></a>
+            </div>
+            <hr>
+            
+                        <center><h5>Oferta de Safra de Café Especial</h5></center>
+                        <p class="texto-parceiros" id="texto-parceiros">
+                            Se você é uma marca de café em busca dos melhores grãos que valoriza a qualidade, não perca a chance de adquirir
+                            nossos grãos especiais. Entre em contato para saber mais sobre nossos produtos.
+                            <br>
+                            - Origem: Nossos grãos de café são cultivados em nossa própria lavoura.
+                            <br>
+                            - Qualidade Premium: Cada grão é selecionado para garantir a mais alta qualidade.
+                            <br>
+                            - Sacos de 10 kg: Disponibilizamos sacos de 10 kg por 250,00 para atender às suas necessidades.
+                            Entre em contato conosco:
+                            <br>
+                            - Email: contato@belavistacafe.com
+                            ouTelefone: (11) 9876-5432
+                        </p>
+                    </div>
+                    <p class="ler-mais" onclick="toggleText()">Ler mais</p>
+                    <center>
+                        <img class="imagem-parceiros" src="https://agroslim.com.br/wp-content/uploads/2020/10/agroslim_Blog_plantio_cafe-1.jpg" alt="">
+                    </center>
+        <p class="ler-mais" onclick="toggleText()">Ler mais</p>
+        <center>
+            <img class="imagem-parceiros" src="https://www.baldan.com.br/uploads/pagina/elemento/campo/2023/04/7ie7DCK5iso4CMe3/00-avola-baldan.webp" alt="">
+        </center>
+
+        <div id="botoes-container">
+            <img class="curtirFavoritar curso-pointer zoom-in" src="~/img/coracao.png" onclick="toggleText()">
+            <button id="botao-center" class="btn btn-primary curso-pointer" type="submit">Saiba mais</button>
+            <img class="curtirFavoritar curso-pointer zoom-in" src="~/img/favorito.png" onclick="toggleText()">
+
+        </div>
+    </div>
+</section>
+
+
+
+
+        
+                  

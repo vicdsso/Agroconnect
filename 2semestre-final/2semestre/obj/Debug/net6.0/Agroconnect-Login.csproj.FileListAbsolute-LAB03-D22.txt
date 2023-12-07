@@ -1,0 +1,9 @@
+C:\Users\2971392311016\OneDrive\Área de Trabalho\Agroconnect-Login\obj\Debug\net6.0\Agroconnect-Login.csproj.AssemblyReference.cache
+C:\Users\2971392311016\OneDrive\Área de Trabalho\Agroconnect-Login\obj\Debug\net6.0\Agroconnect-Login.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2971392311016\OneDrive\Área de Trabalho\Agroconnect-Login\obj\Debug\net6.0\Agroconnect-Login.AssemblyInfoInputs.cache
+C:\Users\2971392311016\OneDrive\Área de Trabalho\Agroconnect-Login\obj\Debug\net6.0\Agroconnect-Login.AssemblyInfo.cs
+C:\Users\2971392311016\OneDrive\Área de Trabalho\Agroconnect-Login\obj\Debug\net6.0\Agroconnect-Login.csproj.CoreCompileInputs.cache
+C:\Users\2971392311016\OneDrive\Área de Trabalho\Agroconnect-Login\obj\Debug\net6.0\Agroconnect-Login.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\2971392311016\OneDrive\Área de Trabalho\Agroconnect-Login\obj\Debug\net6.0\Agroconnect-Login.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\2971392311016\OneDrive\Área de Trabalho\Agroconnect-Login\obj\Debug\net6.0\Agroconnect-Login.RazorAssemblyInfo.cache
+C:\Users\2971392311016\OneDrive\Área de Trabalho\Agroconnect-Login\obj\Debug\net6.0\Agroconnect-Login.RazorAssemblyInfo.cs
