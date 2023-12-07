@@ -1,0 +1,320 @@
+﻿@model IEnumerable<Agroconnect_Login.Models.Publicacao>//Publicacao esta verde e carro estava branco
+
+@{
+    ViewData["Title"] = "Index";
+}
+@* 
+<h1>Lista de Publicações</h1>
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">Criar Novo&nbsp;<span class="fa fa-plus"></span></a>
+</p>
+ *@
+
+
+<section class="fundo-verde">
+    <section class="banner">
+
+        <div class="header">
+            <!--<img src="https://digistrat.com.br/wp-content/uploads/2021/04/logo-baldan-connected-marrom.jpeg">-->
+            <div class="cover" id="cover-image">
+                <div class="perfil-usuario">
+                    <img id="perfil-usuario-img" src="~/img/LogoBaldan.png" alt="">
+
+
+                    <input id="profile-picture-upload" type="file" style="display: none;" accept="~img/*">
+                    <input id="cover-photo-upload" type="file" style="display: none;" accept="~img/*">
+                </div>
+
+
+                <!-- Ícones das redes sociais -->
+                <div class="redes-sociais">
+                    <a href="#" class="rede-social-link"><img src="~/img/facebook.png" alt="Facebook"></a>
+                    <a href="#" class="rede-social-link"><img src="~/img/instagram.png" alt="Instagram"></a>
+                    <a href="#" class="rede-social-link"><img src="~/img/whatsapp.png" alt="WhatsApp"></a>
+                    <a href="#" class="rede-social-link"><img src="~/img/linkedin.png" alt="LinkedIn"></a>
+                    <a href="mailto:seuemail@gmail.com" class="rede-social-link"><img src="~/img/email.png" alt="Email"></a>
+                    <a href="tel:seunumero" class="rede-social-link"><img src="~/img/telefone.png" alt="Telefone"></a>
+                </div>
+
+                <br>
+                <br>
+                <br>
+
+            </div>
+        </div>
+    </section>
+    <a href="~/Login/Editar" class="rede-social-link btn editar-perfil" id="botao-end">Editar perfil</a>
+
+
+
+    <style>
+        .editar-perfil {
+            margin-top: -60px !important;
+        }
+    </style>
+
+
+    <!-- Botão para editar fotos de perfil e de capa -->
+
+    <center>
+        <!-- Nome da empresa -->
+        <div>
+            <h3 class="nomeEmpresa">BALDAN</h3>
+            <h3 class="sobre-titulo">Sobre a Empresa</h3>
+        </div>
+        <div style="color:#000000;" id="DescricaoElema">
+            <p id="sobre-descricao">
+                A Baldan oferece máquinas e implementos agrícolas de alta qualidade,
+                sendo líder no setor agrícola. Seus produtos são feitos com altos padrões de
+                qualidade, visando durabilidade e desempenho...
+            </p>
+            <p id="lerMais">Leia mais</p>
+
+            <div id="descricaoCompleta" style="display: none; color:#000000;">
+                <p> Matão-SP</p>
+                <p>  https://www.baldan.com.br/</p>
+                <p id="sobre-descricao">A Baldan oferece máquinas e implementos agrícolas de alta qualidade, sendo líder no setor agrícola. Seus produtos são feitos com altos padrões de qualidade, visando durabilidade e desempenho excepcionais. Adaptáveis a qualquer escala, desde grandes fazendeiros até pequenos proprietários, suas soluções personalizadas atendem a diversas necessidades. Além disso, a empresa se destaca pelo compromisso com a inovação, constantemente pesquisando e desenvolvendo novas tecnologias e práticas sustentáveis para melhorar a produtividade e o sucesso de seus clientes. Convidam a todos a se juntarem a essa jornada de sucesso.</p>
+                <blockquote class="transicao-lema">
+                    "Se foram eles os alicerces, seremos nós outros parede sólida de segurança; se eles plantaram, não nos compete colher, mas continuar plantando, pois que a colheita nós oferecemos ao povo brasileiro."
+                    <footer>- Oscar Baldan</footer>
+                </blockquote>
+            </div>
+        </div>
+    </center>
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const lerMaisButton = document.getElementById("lerMais");
+            const descricaoInicial = document.getElementById("sobre-descricao");
+            const descricaoCompleta = document.getElementById("descricaoCompleta");
+            const lerMenosButton = document.createElement("p");
+            lerMenosButton.innerHTML = "Ler Menos";
+            lerMenosButton.style.display = "none";
+
+            lerMaisButton.addEventListener("click", function () {
+                if (descricaoCompleta.style.display === "none") {
+                    descricaoCompleta.style.display = "block";
+                    descricaoInicial.style.display = "none";
+                    lerMaisButton.style.display = "none";
+                    lerMenosButton.style.display = "block";
+                }
+            });
+
+            lerMenosButton.addEventListener("click", function () {
+                descricaoCompleta.style.display = "none";
+                descricaoInicial.style.display = "block";
+                lerMaisButton.style.display = "block";
+                lerMenosButton.style.display = "none";
+            });
+
+            
+            descricaoCompleta.parentNode.appendChild(lerMenosButton);
+        });
+    </script>
+
+
+
+
+
+</section>
+
+<hr class="hr">
+<a href="~/Publicacao/Create" class="btn" id="botao-end">Criar publicação</a>
+<br>
+
+<br>
+<br>
+<br>
+
+
+<style>
+    .row {
+        color: white;}
+</style>
+
+
+<section>
+    <div class="estrutura">
+
+        <div class="row">
+            <div class="col">
+                <img class="logo-parceiros" src="/img/LogoBaldan.png">
+
+                <div class="post-textos">
+                    <p class="nome-parceiro">Baldan</p>
+
+
+                    <p class="tipo-parceiro">
+
+                        Empresa|Maquinas
+
+
+                    </p>
+
+
+                </div>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <a asp-action="Edit"><img src="~/img/editar.png" width="30px " height="30px"></a>
+                <a asp-action="Delete" onclick="return confirm('Deseja excluir esta publicação?');"><img src="~/img/excluir.png" width="30px " height="30px"></a>
+            </div>
+            <hr>
+            <center>
+                <h5>
+                    AVOLA - Pulverizador Autopropelido
+                </h5>
+            </center>
+            <p class="texto-parceiros" id="texto-parceiros">
+                Um pulverizador resistente e versátil com opções de reservatórios de 2000 ou 2500 litros e
+                barras de 25 a 30 metros. Equipado com um motor de 190 cv e uma transmissão hidrostática bem ajustada,
+                é capaz de navegar em diferentes tipos de terreno e superar obstáculos devido ao seu baixo peso.
+                <br>
+
+
+                Reservatórios: Disponível em opções de 2000 ou 2500 litros.
+                <br>
+                Alcance: Barras de 25 a 30 metros para cobertura eficaz.
+                <br>
+                Potência: Motor de 190 cv para desempenho superior.
+                <br>
+                Versatilidade: Adapte-se a diversos tipos de terreno com sua transmissão hidrostática.
+                <br>
+                Confiabilidade: Supere obstáculos com facilidade devido ao seu baixo peso.
+                <br>
+            </p>
+        </div>
+        <p class="ler-mais" onclick="toggleText()">Ler mais</p>
+        <center>
+            <img class="imagem-parceiros" src="https://www.baldan.com.br/uploads/pagina/elemento/campo/2023/04/7ie7DCK5iso4CMe3/00-avola-baldan.webp" alt="">
+        </center>
+
+        <div id="botoes-container">
+            <img class="curtirFavoritar curso-pointer zoom-in" src="~/img/coracao.png" onclick="toggleText()">
+            <button id="botao-center" class="btn btn-primary curso-pointer" type="submit">Saiba mais</button>
+            <img class="curtirFavoritar curso-pointer zoom-in" src="~/img/favorito.png" onclick="toggleText()">
+
+        </div>
+    </div>
+</section>
+
+<tbody>
+    @foreach (var item in Model)
+    {
+
+
+        <section>
+            <div class="estrutura">
+
+                <div class="row">
+                    <div class="col">
+                        <img class="logo-parceiros" src="/img/LogoBaldan.png">
+
+                        <div class="post-textos">
+                            <p class="nome-parceiro">Baldan</p>
+
+
+                            <p class="tipo-parceiro">
+
+                                Empresa|Maquinas
+
+
+                            </p>
+
+
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                        <a asp-action="Edit" asp-route-id="@item.Id"><img src="~/img/editar.png" width="30px " height="30px"></a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" onclick="return confirm('Deseja excluir esta publicação?');"><img src="~/img/excluir.png" width="30px " height="30px"></a>
+                    </div>
+
+
+                    <hr>
+                    <center>
+                        <h5>
+                            @Html.DisplayFor(modelItem => item.Titulo)
+                        </h5>
+                    </center>
+                    <p class="texto-parceiros" id="texto-parceiros">
+                        @Html.DisplayFor(modelItem => item.Descricao)
+                    </p>
+                </div>
+                <p class="ler-mais" onclick="toggleText()">Ler mais</p>
+                <center>
+                    <img class="imagem-parceiros" src="https://www.baldan.com.br/uploads/pagina/elemento/campo/2016/04/eruWk8dL24jkoyFx/20141126100647GqTvdqtFCH_600x450.webp" alt="">
+                </center>
+
+                <div id="botoes-container">
+                    <img class="curtirFavoritar curso-pointer zoom-in" src="~/img/coracao.png" onclick="toggleText()">
+                    <button id="botao-center" class="btn btn-primary curso-pointer" type="submit">Saiba mais</button>
+                    <img class="curtirFavoritar curso-pointer zoom-in" src="~/img/favorito.png" onclick="toggleText()">
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <tr>
+
+
+            <td>
+                @* Botões do CRUD *@
+                @*<a asp-action="Edit" class="btn btn-warning edit" asp-route-id="@item.Id">Editar&nbsp;<span class="fa fa-pencil-square-o"></span></a>
+            <a asp-action="Delete" class="btn btn-danger delete" asp-route-id="@item.Id" onclick="return confirm('Deseja excluir esta publicação?');">Remover&nbsp;<span class="fa fa-trash-o"></span></a>*@
+                @* Links das Actions *@
+                @*
+            @Html.ActionLink("Editar", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Detalhes", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Remover", "Delete", new {  id=item.Id }, new { onclick = "return confirm('Deseja excluir sua publicação?');"})
+            *@
+            </td>
+        </tr>
+    }
+</tbody>
+
+
+<script>
+    var coracao = document.querySelector(".curtirFavoritar[src*='coracao']");
+    var favorito = document.querySelector(".curtirFavoritar[src*='favorito']");
+    var iconeCurtido = false;
+    var iconeFavoritado = false;
+
+    function toggleText() {
+        var textoParceiros = document.getElementById("texto-parceiros");
+
+        if (textoParceiros.style.maxHeight) {
+            textoParceiros.style.maxHeight = null;
+        } else {
+            textoParceiros.style.maxHeight = textoParceiros.scrollHeight + "px";
+        }
+    }
+
+    function changeIcon(iconElement, filledPath, emptyPath, state) {
+        if (state) {
+            iconElement.src = emptyPath;
+        } else {
+            iconElement.src = filledPath;
+        }
+    }
+
+    coracao.addEventListener("click", function (event) {
+        event.stopPropagation();
+        iconeCurtido = !iconeCurtido; // Inverte o estado ao clicar
+        changeIcon(coracao, "/img/curtido.png", "/img/coracao.png", iconeCurtido);
+        toggleText();
+    });
+
+    favorito.addEventListener("click", function (event) {
+        event.stopPropagation();
+        iconeFavoritado = !iconeFavoritado;
+        changeIcon(favorito, "/img/favoritado.png", "/img/favorito.png", iconeFavoritado);
+        toggleText();
+    });
+</script>
+
