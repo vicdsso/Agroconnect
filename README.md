@@ -1,4 +1,4 @@
-# Projeto Portal de Divulgação
+# Projeto Interdiciplinar Agroconnect
 
 ## Descrição
 
