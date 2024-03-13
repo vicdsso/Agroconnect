@@ -45,11 +45,11 @@ O objetivo específico do projeto é fornecer um portal para a divulgação de m
 - Linguagem de marcação: HTML
 - Linguagem de estilização: CSS
 - Linguagem de programação: JavaScript, C#
-- Framework de Autenticação e Autorização: ASP.NET Core Identity
-
+- Framework de Autenticação e Autorização:- [ASP.NET Identity](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity)
+  
 ## Referências
 
-- [ASP.NET Identity](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity)
+
 - [Facebook](https://www.facebook.com)
 - [LinkedIn](https://www.linkedin.com)
 - [Instagram](https://www.instagram.com)
