@@ -1,0 +1,45 @@
+html, body, h1, h2, h3, h4, h5, small {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+
+.top-bar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: teal;
+}
+
+
+
+
+
+
+
