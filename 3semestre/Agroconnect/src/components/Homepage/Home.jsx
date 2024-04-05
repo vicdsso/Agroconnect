@@ -4,33 +4,72 @@ import style from "./Home.module.css"
 
 // Componente da Barra de Navegação
 const Home = () => {
+  
   return (
-    <div className={style["top-bar"]}>
-    <ul className={style["menu"]}>
-      <li><a href="#">One</a></li>
-      <li><a href="#">Two</a></li>
-      <li><a href="#">Three</a></li>
-    </ul>
-  </div>
-   
-  );
-};
-/*
-// Componente do Banner
-function Banner() {
-  return (
-    <div>
-      <Nav />
-      <div className="big-banner">
-        <div className="callout large primary">
-          <div className="row column text-center">
-            <h1>React Blog</h1>
-          </div>
+    <div className={style["home-container"]}>
+      <div className={style["banner-container"]}>
+        <img src="/img/bannerNote.png" alt="Banner" className={style["banner-image"]} />
+        <div className={style["banner-text"]}>
+          <h1>Seja bem Vindos ao Agrocconect</h1>
+          <h2>Conectando o mundo do agronegocio!</h2>
+        </div>
+        
+        <div className={style["top-bar"]}>
+          <img src="/img/logo.png" alt="Logo" className={style["logo"]} />
+          <h4>Agrocconect</h4>
+          <ul className={style["menu"]}>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li className={style["dropdown"]}>
+              <a href="#" className={style["dropbtn"]}>Categorias</a>
+              <div className={style["dropdown-content"]}>
+                <a href="#">Serviços</a>
+                <a href="#">Maquinas</a>
+                <a href="#">Produtos</a>
+              </div>
+            </li>
+            <li>
+            <input type="checkbox" id="search-toggle" class={style["search-toggle"]} />
+<div className={style["search-bar"]}>
+  <label htmlFor="search-toggle" className={style["search-icon"]}></label>
+  <input type="text" placeholder="Pesquisar..." className={style["search-input"]} />
+</div>
+            </li>
+            <li><a href="#">Log in</a></li>
+          </ul>
+        </div>
+      </div>
+      <div className={style.cardFundo}>
+      <center><h5>Divulgações</h5></center>
+      <div className={style["card-container"]}>
+        
+        <div className={style["card"]}>
+          <img src="https://avatars.mds.yandex.net/i?id=addc79487aa87371d1915b3b1e137c6d2a99fb68-9677438-images-thumbs&n=13" alt="Card 1" />
+          <h3>Produtos</h3>
+        </div>
+        <div className={style["card"]}>
+          <img src="https://content.assets.pressassociation.io/2017/11/09154445/0ab261b1-5654-4473-9d3c-49f667b74860.jpg" alt="Card 2" />
+          <h3>Serviços</h3>
+        </div>
+        <div className={style["card"]}>
+          <img src="https://lubricants.repsol.com/content/dam/repsol-lubricantes/es/distributivas-de-gama/agro/agro-destacado.jpg" alt="Card 3" />
+          <h3>Maquinas</h3>
+        </div>
+        <div className={style["card"]}>
+          <img src="https://lista.md/public/uploads/articles/268/tinymce_images_d7375d19bc2d1642270320055dc50807.jpg?1649411551" alt="Card 4" />
+          <h3>Gerais</h3>
         </div>
       </div>
     </div>
+    </div>
   );
-}
+};
+
+
+
+
+/*
+
 
 // Componente de um Post
 function Post({ ptitle, pimg, date, postbody, author, comments }) {

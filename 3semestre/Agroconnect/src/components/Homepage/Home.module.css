@@ -1,18 +1,8 @@
+
 html, body, h1, h2, h3, h4, h5, small {
   font-family: 'Noto Sans', sans-serif;
 }
 
-
-.top-bar {
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-  background: transparent;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  transition: all 0.5s ease;
-  display: flex;
-  justify-content: center;
-}
 
 .menu {
   list-style-type: none;
@@ -27,7 +17,7 @@ html, body, h1, h2, h3, h4, h5, small {
 }
 
 .menu li a {
-  color: black;
+  color: rgb(12, 12, 12);
   text-decoration: none;
   font-size: 16px;
   transition: color 0.3s ease;
@@ -36,9 +26,239 @@ html, body, h1, h2, h3, h4, h5, small {
 .menu li a:hover {
   color: teal;
 }
+.top-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0); /* Cor de fundo da barra de navegação com transparência */
+  padding: 10px 20px; /* Espaçamento interno da barra de navegação */
+  box-sizing: border-box; /* Garante que o padding não aumente o tamanho total da barra */
+  display: flex;
+  justify-content: space-between; /* Alinhamento dos elementos na barra de navegação */
+  align-items: center; /* Alinhamento vertical dos elementos na barra de navegação */
+}
+.top-bar h4{
+ color: rgb(0, 0, 0);
+ margin-top: 15px;
+ margin-left: -900px;
+ font-family: "Salsa", cursive;
+ font-weight: 400;
+ font-style: normal
+}
+.top-bar.scrollNav {
+  background: #ffffff;
+  opacity: 0.92;
+  transition: all 0.5s ease;
+  border-bottom: 1px solid rgba(200, 200, 200, 0.8);
+  .menu li, .menu li a {
+    color: #555;
+  }
+}
+
+.logo {
+  width: 150px;
+}
+/*banner*/
+.banner-container {
+  position: relative;
+}
+
+.banner-image {
+  width: 100%;
+  height: 920px;
+}
+.banner-text {
+  position: absolute;
+  top: 20%;
+ margin-left: 100px; /* Posição mais para a esquerda */
+  transform: translateY(-50%);
+  color: rgb(0, 0, 0);
+}
+
+.banner-text h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  
+}
+.banner-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(63, 63, 63, 0.8);
+}
+
+.banner-text p {
+  font-size: 2rem;
+}
+/*pesquisa*/
+.search-toggle {
+  display: none;
+}
+
+.search-bar {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url('/img/search.png'); /* Ícone de pesquisa fechado */
+  background-size: cover;
+  cursor: pointer;
+}
+
+/* Quando o checkbox estiver marcado, mude o ícone para o ícone de fechar */
+.search-toggle:checked + .search-bar .search-icon {
+  background-image: url('/img/search.png'); /* Ícone de pesquisa aberto */
+}
+
+.search-bar .search-input {
+  width: 0;
+  padding-left: 30px; /* Espaço para o ícone de pesquisa */
+  transition: width 0.4s ease-in-out;
+  background-color: #f2f2f200; /* Cor de fundo dentro da barra de pesquisa */
+  border: none; /* Remover borda */
+}
+
+.search-toggle:checked + .search-bar .search-input {
+  width: 150px; /* Largura do campo de pesquisa quando ativado */
+  border: 1px solid #cccccc04; /* Adicionar borda quando ativado, se desejado */
+}
+
+/*dropdown*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #033e1aa6;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(0, 0, 0);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f120;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*cards*/
+
+.cardFundo{
+  background-color: #472E0B;
+}
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+
+ 
+}
+
+.card {
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  border-radius: 10px; /* Bordas arredondadas */
+  padding: 10px; /* Espaçamento interno do card */
+ }
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  margin-top: 15px;
+  color: #ffffff;
+}
+h5{
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+ font-weight: 400;
+ font-style: normal;
+margin-top: 10%;
+
+}
 
 
+/*responsivo*/
+/* Media queries para tornar o estilo responsivo */
+@media screen and (max-width: 798px) {
+  .menu li {
+    margin-right: 10px; /* Reduz a margem entre os itens do menu em telas menores */
+  }
 
+  .logo {
+    width: 120px; /* Reduz o tamanho da logo em telas menores */
+  }
+
+  .banner-text {
+    position: absolute;
+    top: 50%;
+   margin-left: 30px; /* Posição mais para a esquerda */
+    transform: translateY(-50%);
+    color: rgb(0, 0, 0);
+  }
+
+  .banner-text h1 {
+    font-size: 2rem; /* Reduz o tamanho do título sobre o banner em telas menores */
+  }
+
+  .banner-text h2 {
+    font-size: 0.8rem; /* Reduz o tamanho do subtítulo sobre o banner em telas menores */
+  }
+
+  .banner-text p {
+    font-size: 1.5rem; /* Reduz o tamanho do texto sobre o banner em telas menores */
+  }
+  .banner-image {
+    width: 100%;
+    height: 400px;
+  }
+  .card-container {
+    flex-direction: column; /* Altera a direção do flex para coluna */
+    align-items: center; /* Centraliza os cards na tela */
+  }
+  .card {
+    margin-bottom: 20px; /* Adiciona margem inferior para criar espaço entre os cards */
+  }
+  .top-bar h4{
+  
+    margin-top: 15px;
+    margin-left: -100px;
+    font-size: 20px;
+    font-family: "Salsa", cursive;
+    font-weight: 400;
+    font-style: normal
+   }
+   .home-container {
+    position: relative;
+    background-image:url('/img/cardf4 (2).png ') ;
+    
+  }
+  
+}
 
 
 
