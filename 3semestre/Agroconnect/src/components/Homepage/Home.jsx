@@ -8,9 +8,9 @@ const Home = () => {
   return (
     <div className={style["home-container"]}>
       <div className={style["banner-container"]}>
-        <img src="/img/bannerNote.png" alt="Banner" className={style["banner-image"]} />
+        <img src="/img/fundob.jpg" alt="Banner" className={style["banner-image"]} />
         <div className={style["banner-text"]}>
-          <h1>Seja bem Vindos ao Agrocconect</h1>
+          <h1>Bem Vindos! Ao Agrocconect</h1>
           <h2>Conectando o mundo do agronegocio!</h2>
         </div>
         
@@ -39,7 +39,6 @@ const Home = () => {
           </ul>
         </div>
       </div>
-      <div className={style.cardFundo}>
       <center><h5>Divulgações</h5></center>
       <div className={style["card-container"]}>
         
@@ -57,10 +56,9 @@ const Home = () => {
         </div>
         <div className={style["card"]}>
           <img src="https://lista.md/public/uploads/articles/268/tinymce_images_d7375d19bc2d1642270320055dc50807.jpg?1649411551" alt="Card 4" />
-          <h3>Gerais</h3>
+          <h3>Todos</h3>
         </div>
       </div>
-    </div>
     </div>
   );
 };
