@@ -1,51 +1,60 @@
-
-html, body, h1, h2, h3, h4, h5, small {
-  font-family: 'Noto Sans', sans-serif;
-}
-
-
+/*NavBar*/
 .menu {
   list-style-type: none;
   display: flex;
-  align-items: center;
+  align-items: center; /* Alinhar itens verticalmente */
   margin: 0;
   padding: 0;
 }
 
 .menu li {
-  margin-right: 20px;
+  margin-right: 120px;
 }
 
 .menu li a {
   color: rgb(12, 12, 12);
   text-decoration: none;
-  font-size: 16px;
+  font-size: 25px;
   transition: color 0.3s ease;
 }
 
-.menu li a:hover {
-  color: teal;
+.agroconnect {
+  color: rgb(0, 0, 0);
+padding-left: 7%;
+  font-weight: 700;
+  position: fixed;
+ 
 }
+
 .top-bar {
-  position: absolute;
+  background-color: transparent; /* Cor de fundo transparente */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0); /* Cor de fundo da barra de navegação com transparência */
-  padding: 10px 20px; /* Espaçamento interno da barra de navegação */
-  box-sizing: border-box; /* Garante que o padding não aumente o tamanho total da barra */
+  padding: 10px 20px;
+  box-sizing: border-box;
   display: flex;
-  justify-content: space-between; /* Alinhamento dos elementos na barra de navegação */
-  align-items: center; /* Alinhamento vertical dos elementos na barra de navegação */
+  justify-content: space-between;
+  align-items: center;
 }
-.top-bar h4{
- color: rgb(119, 200, 53);
- margin-top: 15px;
- margin-left: -900px;
- font-family: "Salsa", cursive;
- font-weight: 400;
- font-style: normal
+
+.top-bar .logo {
+  width: 150px;
+ 
 }
+
+
+
+.top-bar h4 {
+  color: rgb(0, 0, 0);
+  margin-top: 15px;
+  margin-left: 0; /* Alterado para alinhar o h4 à esquerda */
+  font-weight: 700;
+}
+
+
+
 .top-bar.scrollNav {
   background: #ffffff;
   opacity: 0.92;
@@ -59,18 +68,20 @@ html, body, h1, h2, h3, h4, h5, small {
 .logo {
   width: 150px;
 }
+
 /*banner*/
+
 .banner-container {
   position: relative;
 }
 
 .banner-image {
   width: 100%;
-  height: 700px;
+  height: 100%;
 }
 .banner-text {
   position: absolute;
-  top: 50%;
+  top:30%;
  margin-left: 100px; /* Posição mais para a esquerda */
   transform: translateY(-50%);
   color: rgb(0, 0, 0);
@@ -84,7 +95,7 @@ html, body, h1, h2, h3, h4, h5, small {
 .banner-text h2 {
   font-size: 2rem;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 4px rgba(63, 63, 63, 0.8);
+  text-shadow: 2px 2px 4px rgba(183, 183, 183, 0.8);
 }
 
 .banner-text p {
@@ -129,8 +140,9 @@ html, body, h1, h2, h3, h4, h5, small {
   border: 1px solid #cccccc04; /* Adicionar borda quando ativado, se desejado */
 }
 
-/*dropdown*/
+/*Publicações*/
 .dropdown {
+
   position: relative;
   display: inline-block;
 }
@@ -138,7 +150,7 @@ html, body, h1, h2, h3, h4, h5, small {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #033e1aa6;
+  background-color: #cacdcba6;
   min-width: 160px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   z-index: 1;
@@ -158,7 +170,20 @@ html, body, h1, h2, h3, h4, h5, small {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-/*cards*/
+/*4 Categorias*/
+.cards{
+  background-color: #472E0B;
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+.divulgacao-titulo{
+  margin-top: 15%;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+ font-weight: 400;
+padding-bottom:30px ;
+ 
+}
 .home-container {
   position: relative;
   background-image:url('/img/cardf2.png ') ;
@@ -169,40 +194,37 @@ html, body, h1, h2, h3, h4, h5, small {
   display: flex;
   justify-content: space-around;
   margin-top: 10px;
+  margin-bottom: 15%;
+
+
+
 }
 
 .card {
   width: 200px;
-  text-align: center;
+
   transition: transform 0.3s ease;
-  background-color: #ffffff00; /* Cor de fundo do card */
-  border-radius: 10px; /* Bordas arredondadas */
-  padding: 10px; /* Espaçamento interno do card */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra do card */
-}
+ }
 
 .card:hover {
   transform: translateY(-5px);
 }
 
 .card img {
-  width: 100%;
-  height: auto;
+  width: 140%;
+  height: 80%;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.849);
 }
 
-.card h3 {
+
+.categorias-titulo{
   margin-top: 10px;
   color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  margin-left: 35%;
 }
-h5{
-  color: rgb(255, 255, 255);
-  font-size: 50px;
- font-family: "Salsa", cursive;
- font-weight: 400;
- font-style: normal
-
-}
-
 
 /*responsivo*/
 /* Media queries para tornar o estilo responsivo */

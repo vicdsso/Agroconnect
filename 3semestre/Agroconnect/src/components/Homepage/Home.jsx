@@ -8,23 +8,23 @@ const Home = () => {
   return (
     <div className={style["home-container"]}>
       <div className={style["banner-container"]}>
-        <img src="/img/fundob.jpg" alt="Banner" className={style["banner-image"]} />
+        <img src="/img/bannerNote.png" alt="Banner" className={style["banner-image"]} />
         <div className={style["banner-text"]}>
-          <h1>Bem Vindos! Ao Agrocconect</h1>
+          <h1>Seja bem Vindos ao Agrocconect</h1>
           <h2>Conectando o mundo do agronegocio!</h2>
         </div>
         
         <div className={style["top-bar"]}>
           <img src="/img/logo.png" alt="Logo" className={style["logo"]} />
-          <h4>Agrocconect</h4>
+          <h4 className={style.agroconnect}>Agrocconect</h4>
           <ul className={style["menu"]}>
             <li><a href="#">Home</a></li>
             <li><a href="#">Sobre</a></li>
             <li className={style["dropdown"]}>
-              <a href="#" className={style["dropbtn"]}>Categorias</a>
+              <a href="#" className={style["dropbtn"]}>Publicações</a>
               <div className={style["dropdown-content"]}>
-                <a href="#">Serviços</a>
                 <a href="#">Maquinas</a>
+                <a href="#">Serviços</a>
                 <a href="#">Produtos</a>
               </div>
             </li>
@@ -39,26 +39,31 @@ const Home = () => {
           </ul>
         </div>
       </div>
-      <center><h5>Divulgações</h5></center>
+      <div className={style.cards}>
+      <center><h5 className={style["divulgacao-titulo"]}>Divulgações</h5></center>
       <div className={style["card-container"]}>
         
+      <div className={style["card"]}>
+          <img src="https://lista.md/public/uploads/articles/268/tinymce_images_d7375d19bc2d1642270320055dc50807.jpg?1649411551" alt="Card 4" />
+          <h3 className={style["categorias-titulo"]}>Gerais</h3>
+        </div>
+
         <div className={style["card"]}>
-          <img src="https://avatars.mds.yandex.net/i?id=addc79487aa87371d1915b3b1e137c6d2a99fb68-9677438-images-thumbs&n=13" alt="Card 1" />
-          <h3>Produtos</h3>
+          <img src="/img/maquinas-icone.jpg" alt="Card 3" />
+          <h3 className={style["categorias-titulo"]}>Maquinas</h3>
         </div>
         <div className={style["card"]}>
           <img src="https://content.assets.pressassociation.io/2017/11/09154445/0ab261b1-5654-4473-9d3c-49f667b74860.jpg" alt="Card 2" />
-          <h3>Serviços</h3>
+          <h3 className={style["categorias-titulo"]}>Serviços</h3>
         </div>
         <div className={style["card"]}>
-          <img src="https://lubricants.repsol.com/content/dam/repsol-lubricantes/es/distributivas-de-gama/agro/agro-destacado.jpg" alt="Card 3" />
-          <h3>Maquinas</h3>
+          <img src="https://avatars.mds.yandex.net/i?id=addc79487aa87371d1915b3b1e137c6d2a99fb68-9677438-images-thumbs&n=13" alt="Card 1" />
+          <h3 className={style["categorias-titulo"]}>Produtos</h3>
         </div>
-        <div className={style["card"]}>
-          <img src="https://lista.md/public/uploads/articles/268/tinymce_images_d7375d19bc2d1642270320055dc50807.jpg?1649411551" alt="Card 4" />
-          <h3>Todos</h3>
-        </div>
+       
+       
       </div>
+    </div>
     </div>
   );
 };
